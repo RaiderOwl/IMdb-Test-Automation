@@ -43,4 +43,8 @@ scroll
 
 check_text
     [Arguments]    ${xpath}    ${text}
-    Element Text Should Be    locator=${xpath}    expected=${text}    message="Text strings dont match with each other"
+    SeleniumLibrary.Element Text Should Be    locator=${xpath}    expected=${text}    message="Text strings dont match with each other"
+
+log
+    [Arguments]    ${string}
+    Log To Console    ${string}

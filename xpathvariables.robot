@@ -1,10 +1,11 @@
 *** Variables ***
 #Globals
-${site_url}    https://www.imdb.com/
+${site_url}    https://www.imdb.com
 ${browser}    chrome
 ${to}    30
 ${serie_1}    The Circus
 ${serie_2}    The Jazz Singer
+${none_detected}    0
 
 #Xpaths
 ${xpath_menu_button}    //*[@id="imdbHeader-navDrawerOpen"]
@@ -18,8 +19,7 @@ ${xpath_writer_text}    //*[@id="__next"]/main/div/section[1]/section/div[3]/sec
 ${xpath_stars_text}    //*[@id="__next"]/main/div/section[1]/section/div[3]/section/section/div[3]/div[2]/div[1]/div[3]/ul/li[3]/div/ul
 ${xpath_home_button}    //*[@id="home_img_holder"]
 ${xpath_search_box}    //*[@id="suggestion-search"]
-# ${xpath_the_circus_div}    //*[@id="react-autowhatever-1--item-0"]/a/div[2]/div[1]
-# ${xpath_jazz_singer_div}    //*[@id="react-autowhatever-1--item-0"]/a/div[2]/div[2]
 ${xpath_the_circus_div}    //*[@id="react-autowhatever-1--item-0"]/a/div[2]//div[contains(text(),'${serie_1}')]
 ${xpath_jazz_singer_div}    //*[@id="react-autowhatever-1--item-0"]/a/div[2]//div[contains(text(),'${serie_2}')]
 ${xpath_see_all_photos_link}    //*[@id="__next"]/main/div/section[1]/div/section/div/div[1]/section[2]/div[1]/div/a
+# ${xpath_see_all_photos_link}    //a[@href='/title/tt0018773/mediaindex/?ref_=tt_mi_sm']
