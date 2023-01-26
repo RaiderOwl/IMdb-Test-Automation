@@ -10,19 +10,12 @@ click_ele
     [Arguments]    ${xpath}
     Click Element    locator=${xpath}
 
-close
-    Close All Browsers
-
 input
     [Arguments]    ${xpath}    ${text}
     Input Text    locator=${xpath}    text=${text}
 
 max_browser
     Maximize Browser Window
-
-page_contain_ele
-    [Arguments]    ${xpath}
-    Page Should Contain Element    locaotr=${xpath}
 
 wait_ele_visible
     [Arguments]    ${xpath}    ${second}
@@ -47,4 +40,4 @@ check_text
 
 log
     [Arguments]    ${string}
-    Log To Console    ${string}
+    Log To Console    message=${string}
