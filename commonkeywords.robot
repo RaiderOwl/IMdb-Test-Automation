@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    RequestsLibrary
 Library    Collections
 Resource    shortcuts.robot
 Resource    xpathvariables.robot
